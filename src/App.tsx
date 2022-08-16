@@ -1,18 +1,21 @@
 import React from 'react';
+
+import { 
+  Route,
+  Routes 
+} from 'react-router-dom';
+
 import './App.css';
+import Navbar from './components/Navbar';
+import SignIn from './components/SignIn';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div className='nav-bar'>
-          <h2>Marketplace</h2>
-        </div>
-        <a key="Owner Login" href='#'>Owner Login</a>
-        <a key="Shop" href='#'>Shop</a>
-        <a key="Logout" href='#'>Logout</a>
-      </header>
-
+      <Routes>
+        <Route path="/" element={ <Navbar />} />
+        <Route path="signin" element={ <SignIn /> } />
+      </Routes>
     </div>
   );
 }
