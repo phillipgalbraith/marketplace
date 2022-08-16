@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -9,11 +8,11 @@ function App() {
         <div className='nav-bar'>
           <h2>Marketplace</h2>
         </div>
-        <a href='#'>Owner Login</a>
-        <a href='#'>Shop</a>
-        <a href='#'>Logout</a>
+        <a key="Owner Login" href='#'>Owner Login</a>
+        <a key="Shop" href='#'>Shop</a>
+        <a key="Logout" href='#'>Logout</a>
       </header>
-      
+
     </div>
   );
 }
