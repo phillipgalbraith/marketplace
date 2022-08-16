@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 
 function Navbar() {
   return (
@@ -6,9 +7,9 @@ function Navbar() {
         <div className='nav-bar'>
           <h2>Marketplace</h2>
         </div>
-        <a key="Owner Login" href='#'>Owner Login</a>
-        <a key="Shop" href='#'>Shop</a>
-        <a key="Logout" href='#'>Logout</a>
+        <Button variant="text" key="Owner Login" href='#'>Owner Login</Button>
+        <Button variant="text" key="Shop" href='#'>Shop</Button>
+        <Button variant="text" key="Logout" href='#'>Logout</Button>
       </header>
 
     </div>
